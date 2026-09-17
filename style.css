@@ -1,18 +1,55 @@
 *{
     padding: 0;
-    margin: 15px 5px;
+    margin: 0;
+    box-sizing: border-box;
+    
 }
-ul, li{
-    list-style-type: none;
+html, body{
+    width: 100%;
+    min-height: 100vh;
+}
+body{
+    margin: 0;
+    background: #fff;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+input#darkmode-toggle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.background{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: #fff;
+    transition: background 0.3s;
+}
+
+#darkmode-toggle:checked ~ .background {
+    background: #242424;
+}
+#darkmode-toggle:checked ~ header,
+#darkmode-toggle:checked ~ main {
+    color: #fff;
+}
+header ul{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 15px 5px;
+}
+header li{
+    list-style-type: none;
 }
 .about-me{
     display: flex;
 }
 .about-me img{
     height: 350px;
-    align-items: center;
     margin-right: 20px;
 }
 .one, .two, .three{
@@ -25,11 +62,61 @@ ul, li{
     display: flex;
     flex-wrap: wrap;
 }
-.skills{
-    display: flex;
-    gap: 20px;
-}
 .one-project, .two-project, .three-project, .four-project, .five-project{
     flex: 1;
     max-width: 40%;
+}
+.skills{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+/*переключатель*/
+label{
+    width: 50px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+label::after{
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s, background 0.3s;
+}
+/* Дорожка темнеет при включении */
+#darkmode-toggle:checked + header label {
+    background: #242424;
+}
+/* Кругляшок едет вправо и становится тёмным */
+#darkmode-toggle:checked + header label::after {
+    left: 29px;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+}
+input:checked + label{
+    background: #242424;
+}
+input:checked + label::after{
+    left: 31px;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+label:active::after{
+    width: 26px;
 }
