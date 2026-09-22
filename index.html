@@ -17,7 +17,7 @@
             <li>Опыт работы</li>
             <li>Контакты</li>
             <li>
-                <label for="darkmode-toggle"></label>
+                <label class="toogle-label" for="darkmode-toggle"></label>
             </li>
         </ul>
     </header>
@@ -88,80 +88,140 @@
             </div>
         </div>
         <div class="skills">
-            <div class="frontend-skeills">
+            <div class="filter">
+                <label class="filter-label" for="category">Категория:</label>
+                <select id="category">
+                    <option value="all">Все</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="tools">Tools</option>
+                    <option value="ai-assisted">AI-assisted</option>
+                </select>
+            </div>
+            <div class="frontend-skills">
                 <h2>Frontend</h2>
-                <div class="one-skills">
-                    <p>HTML</p>
-                </div>
-                <div class="two-skills">
-                    <p>CSS</p>
-                </div>
-                <div class="tree-skills">
-                    <p>JavaScript</p>
-                </div>
-                <div class="foure-skills">
-                    <p>React</p>
-                </div>
-                <div class="five-skills">
-                    <p>Flexbox/CSS Grid</p>
-                </div>
+                <ul class="skills-list">
+                    <li class="skill" data-category="frontend">
+                        <div class="one-skills">
+                            <p>HTML</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="frontend">
+                        <div class="two-skills">
+                            <p>CSS</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="frontend">
+                        <div class="tree-skills">
+                            <p>JavaScript</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="frontend">
+                        <div class="foure-skills">
+                            <p>React</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="frontend">
+                        <div class="five-skills">
+                            <p>Flexbox/CSS Grid</p>
+                        </div>
+                    </li>
+                </ul>    
             </div>
             <div class="backend-skills">
                 <h2>Backend</h2>
-                <div class="six-skills">
-                    <p>C#</p>
-                </div>
-                <div class="seven-skills">
-                    <p>ASP .NET Core</p>
-                </div>
-                <div class="eight-skills">
-                    <p>WPF</p>
-                </div>
-                <div class="nine-skills">
-                    <p>Entity Framework</p>
-                </div>
-                <div class="ten-skills">
-                    <p>PostgreSQL</p>
-                </div>
-                <div class="eleven-skills">
-                    <p>MS SQL</p>
-                </div>
-                <div class="twelve-skills">
-                    <p>SQL</p>
-                </div>
-                <div class="threeteen-skills">
-                    <p>REST API</p>
-                </div>
+                <ul class="skills-list">
+                    <li class="skill" data-category="backend">
+                        <div class="six-skills">
+                        <p>C#</p>
+                    </div>
+                    </li>
+                    <li class="skill" data-category="backend">
+                        <div class="seven-skills">
+                            <p>ASP .NET Core</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="backend">
+                        <div class="eight-skills">
+                            <p>WPF</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="backend">
+                        <div class="nine-skills">
+                            <p>Entity Framework</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="backend">
+                        <div class="ten-skills">
+                            <p>PostgreSQL</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="backend">
+                        <div class="eleven-skills">
+                            <p>MS SQL</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="backend">
+                        <div class="twelve-skills">
+                            <p>SQL</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="backend">
+                        <div class="threeteen-skills">
+                            <p>REST API</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="tools-skill">
                 <h2>Tools</h2>
-                <div class="fourteen-skills">
-                    <p>GitHub</p>
-                </div>
-                <div class="fiveteen-skills">
-                    <p>Git</p>
-                </div>
-                <div class="sixteen-skills">
-                    <p>Docker</p>
-                </div>
-                <div class="seventeen-skills">
-                    <p>Linux</p>
-                </div>
-                <div class="twenty-one-skills">
-                    <p>Microsoft Office</p>
-                </div>
+                <ul class="skills-list">
+                    <li class="skill" data-category="tools">
+                        <div class="fourteen-skills">
+                            <p>GitHub</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="tools">
+                        <div class="fiveteen-skills">
+                            <p>Git</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="tools">
+                        <div class="sixteen-skills">
+                            <p>Docker</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="tools">
+                        <div class="seventeen-skills">
+                            <p>Linux</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="tools">
+                        <div class="twenty-one-skills">
+                            <p>Microsoft Office</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="ai-skills">
                 <h2>AI-assisted</h2>
-                <div class="eightteen-skills">
-                    <p>ChatGPT</p>
-                </div>
-                <div class="nineteen-skills">
-                    <p>Cursor AI</p>
-                </div>
-                <div class="twenty-skills">
-                    <p>OpenAI Codex</p>
-                </div>
+                <ul class="skills-list">
+                    <li class="skill" data-category="ai-assisted">        
+                        <div class="eightteen-skills">
+                            <p>ChatGPT</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="ai-assisted">        
+                        <div class="nineteen-skills">
+                            <p>Cursor AI</p>
+                        </div>
+                    </li>
+                    <li class="skill" data-category="ai-assisted">        
+                        <div class="twenty-skills">
+                            <p>OpenAI Codex</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>

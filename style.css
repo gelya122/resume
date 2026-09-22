@@ -72,7 +72,7 @@ header li{
     justify-content: center;
 }
 /*переключатель*/
-label{
+.toogle-label{
     width: 50px;
     height: 20px;
     position: relative;
@@ -82,7 +82,7 @@ label{
     border-radius: 20px;
     cursor: pointer;
 }
-label::after{
+.toogle-label::after{
     content: '';
     width: 18px;
     height: 18px;
@@ -95,11 +95,11 @@ label::after{
     transition: left 0.3s, background 0.3s;
 }
 /* Дорожка темнеет при включении */
-#darkmode-toggle:checked + header label {
+#darkmode-toggle:checked + header .toogle-label {
     background: #242424;
 }
 /* Кругляшок едет вправо и становится тёмным */
-#darkmode-toggle:checked + header label::after {
+#darkmode-toggle:checked + header .toogle-label::after {
     left: 29px;
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
@@ -110,13 +110,39 @@ input{
     visibility: hidden;
     position: absolute;
 }
-input:checked + label{
+input:checked + .toogle-label{
     background: #242424;
 }
-input:checked + label::after{
+input:checked + .toogle-label::after{
     left: 31px;
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
-label:active::after{
+.toogle-label:active::after{
     width: 26px;
+}
+.filter{
+    margin-bottom: 20px;
+}
+.skill{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+}
+.skills-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+.skill{
+    order: 1;
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+}
+.sort-asc .skill{
+    order: 2;
+}
+.sort-desc .skill{
+    order: -1;
 }
