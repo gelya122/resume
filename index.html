@@ -1,8 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Resume</title>
 </head>
@@ -10,7 +13,7 @@
     <input type="checkbox" id="darkmode-toggle" />        
     <header>
         <ul>
-            <li>Ангелина Шалякина</li>
+            <li class="heading">Ангелина Шалякина</li>
             <li>О себе</li>
             <li>Образование</li>
             <li>Навыки</li>
@@ -23,14 +26,18 @@
     </header>
     <main>
         <div class="about-me">
-            <div class="about-me-text">
-                <h3>Junior Development</h3>
-                <h2>Шалякина Ангелина Евгеньевна</h2>
-                <p>Я начинающий разработчик, которому нравится превращать идею в работающие интерфейсы и продукты.<br>За время учебы и работы я учавствовала в разработке веб-приложений, сервисов и чат-ботов.<br>Мне приходилось самостоятельно разрабатывать проекты от идеи и пользовательского сценария до готового продукта. Сейчас хочу развиваться именно в frontend-разработке: углублять имеющиеся знания, получать новые и больше практиковаться.</p>
-                <p>GitHub: https://github.com/gelya122 <br> Почта: shalyakinaa@yandex.ru</p>
-                <h3>Образование</h3>
-                <p>Санкт-Петербургская академия инженерных технологий и управления</p>
-            </div>
+            <div class="text">
+                <div class="about-me-text">
+                    <h3>Junior Development</h3>
+                    <h2>Шалякина Ангелина Евгеньевна</h2>
+                    <p>Я начинающий разработчик, которому нравится превращать идею в работающие интерфейсы и продукты.<br>За время учебы и работы я учавствовала в разработке веб-приложений, сервисов и чат-ботов.<br>Мне приходилось самостоятельно разрабатывать проекты от идеи и пользовательского сценария до готового продукта. Сейчас хочу развиваться именно в frontend-разработке: углублять имеющиеся знания, получать новые и больше практиковаться.</p>
+                    <p>GitHub: https://github.com/gelya122 <br> Почта: shalyakinaa@yandex.ru</p>
+                </div>
+                <div class="edu">
+                    <h3>Образование</h3>
+                    <p>Санкт-Петербургская академия инженерных технологий и управления</p>
+                </div>      
+            </div>  
             <div>
                 <img src="/images/IMG_1369.jpg" alt="фото" />
             </div>
@@ -40,7 +47,8 @@
             <div class="experience">
                 <div class="one">
                     <div class="time">
-                        <p>2026-04-01 - 2026-08-05<br>4 месяца</p>
+                        <p>2026-04-01 - 2026-08-05</p>
+                        <p>4 месяца</p>
                     </div>
                     <div class="description">
                         <p><b>AI-assisted Developer (Vibe Coder)</b><br>Арбитег, Санкт - Петербург<br>Разработка веб-приложений, чат-ботов.<br>Активное использование AI-инструментов в процессе разработки (OpenAI Codex, Cursor AI, ChatGPT).</p>
@@ -48,7 +56,8 @@
                 </div>
                 <div class="two">
                     <div class="time">
-                        <p>2025-10-20 - 2026-01-10<br>3 месяца</p>
+                        <p>2025-10-20 - 2026-01-10</p>
+                        <p>3 месяца</p>
                     </div>
                     <div class="description">
                         <p><b>Стажер отдела программного обеспечения</b><br>ЗАО СПИИРАН-НТБВТ, Санкт - Петербург<br>Участие в командной разработке веб-клиента, работа с HTML, CSS, JavaScript, React, TypeScript, Java.<br>Использование AI-инструментов в процессе разработки (Cursor AI).</p>
@@ -56,7 +65,8 @@
                 </div>
                 <div class="three">
                     <div class="time">
-                        <p>2024-09-01 - 2025-01-01<br>4 месяца</p>
+                        <p>2024-09-01 - 2025-01-01</p>
+                        <p>4 месяца</p>
                     </div>
                     <div class="description">
                         <p><b>Преподаватель</b><br>Детский технопарк, Санкт - Петербург<br>Проведение занятий по созданию сайтов.<br>Обучение основам HTML, CSS.<br>Помощь учащимся при создании веб-страниц.<br>Подготовка и проведение практических занятий.</p>
@@ -87,7 +97,8 @@
                 <p>Учебный проект, представляющий собой единую систему для управления онлайн-школой.<br>Платформа состояла из нескольких частей:<br>Сайт для студентов: регистрация и авторизация; каталог курсов; просмотр курсов и уроков; отслеживание прогресса; выполнение домашних заданий; просмотр уведомлений; личный кабинет.<br>Настольное приложение для сотрудников: управление студентами; управление курсами и потоками; работа с домашними заданиями; проверка работ; управление преподавателями и менеджерами; составление расписания открытия занятий; просмотр успеваемости и статистики; отправка уведомлений.<br>Все части системы взаимодействовали с единой базой данных через API на ASP.NET Core.<br>Проект был разработан самостоятельно как дипломный прототип.</p>
             </div>
         </div>
-        <div class="skills">
+        <div class="section-skills">
+            <h1>Навыки</h1>
             <div class="filter">
                 <label class="filter-label" for="category">Категория:</label>
                 <select id="category">
@@ -98,31 +109,33 @@
                     <option value="ai-assisted">AI-assisted</option>
                 </select>
             </div>
+        </div>
+        <div class="skills">
             <div class="frontend-skills">
                 <h2>Frontend</h2>
                 <ul class="skills-list">
                     <li class="skill" data-category="frontend">
-                        <div class="one-skills">
+                        <div class="item-skills">
                             <p>HTML</p>
                         </div>
                     </li>
                     <li class="skill" data-category="frontend">
-                        <div class="two-skills">
+                        <div class="item-skills">
                             <p>CSS</p>
                         </div>
                     </li>
                     <li class="skill" data-category="frontend">
-                        <div class="tree-skills">
+                        <div class="item-skills">
                             <p>JavaScript</p>
                         </div>
                     </li>
                     <li class="skill" data-category="frontend">
-                        <div class="foure-skills">
+                        <div class="item-skills">
                             <p>React</p>
                         </div>
                     </li>
                     <li class="skill" data-category="frontend">
-                        <div class="five-skills">
+                        <div class="item-skills">
                             <p>Flexbox/CSS Grid</p>
                         </div>
                     </li>
@@ -132,42 +145,42 @@
                 <h2>Backend</h2>
                 <ul class="skills-list">
                     <li class="skill" data-category="backend">
-                        <div class="six-skills">
+                        <div class="item-skills">
                         <p>C#</p>
                     </div>
                     </li>
                     <li class="skill" data-category="backend">
-                        <div class="seven-skills">
+                        <div class="item-skills">
                             <p>ASP .NET Core</p>
                         </div>
                     </li>
                     <li class="skill" data-category="backend">
-                        <div class="eight-skills">
+                        <div class="item-skills">
                             <p>WPF</p>
                         </div>
                     </li>
                     <li class="skill" data-category="backend">
-                        <div class="nine-skills">
+                        <div class="item-skills">
                             <p>Entity Framework</p>
                         </div>
                     </li>
                     <li class="skill" data-category="backend">
-                        <div class="ten-skills">
+                        <div class="item-skills">
                             <p>PostgreSQL</p>
                         </div>
                     </li>
                     <li class="skill" data-category="backend">
-                        <div class="eleven-skills">
+                        <div class="item-skills">
                             <p>MS SQL</p>
                         </div>
                     </li>
                     <li class="skill" data-category="backend">
-                        <div class="twelve-skills">
+                        <div class="item-skills">
                             <p>SQL</p>
                         </div>
                     </li>
                     <li class="skill" data-category="backend">
-                        <div class="threeteen-skills">
+                        <div class="item-skills">
                             <p>REST API</p>
                         </div>
                     </li>
@@ -177,27 +190,27 @@
                 <h2>Tools</h2>
                 <ul class="skills-list">
                     <li class="skill" data-category="tools">
-                        <div class="fourteen-skills">
+                        <div class="item-skills">
                             <p>GitHub</p>
                         </div>
                     </li>
                     <li class="skill" data-category="tools">
-                        <div class="fiveteen-skills">
+                        <div class="item-skills">
                             <p>Git</p>
                         </div>
                     </li>
                     <li class="skill" data-category="tools">
-                        <div class="sixteen-skills">
+                        <div class="item-skills">
                             <p>Docker</p>
                         </div>
                     </li>
                     <li class="skill" data-category="tools">
-                        <div class="seventeen-skills">
+                        <div class="item-skills">
                             <p>Linux</p>
                         </div>
                     </li>
                     <li class="skill" data-category="tools">
-                        <div class="twenty-one-skills">
+                        <div class="item-skills">
                             <p>Microsoft Office</p>
                         </div>
                     </li>
@@ -207,17 +220,17 @@
                 <h2>AI-assisted</h2>
                 <ul class="skills-list">
                     <li class="skill" data-category="ai-assisted">        
-                        <div class="eightteen-skills">
+                        <div class="item-skills">
                             <p>ChatGPT</p>
                         </div>
                     </li>
                     <li class="skill" data-category="ai-assisted">        
-                        <div class="nineteen-skills">
+                        <div class="item-skills">
                             <p>Cursor AI</p>
                         </div>
                     </li>
                     <li class="skill" data-category="ai-assisted">        
-                        <div class="twenty-skills">
+                        <div class="item-skills">
                             <p>OpenAI Codex</p>
                         </div>
                     </li>
@@ -225,6 +238,177 @@
             </div>
         </div>
     </main>
+    <div class="background"></div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ангелина Шалякина — Резюме</title>
+</head>
+<body>
+    <input type="checkbox" id="darkmode-toggle" />
+    <header>
+        <ul>
+            <li class="heading">Ангелина Шалякина</li>
+            <li><a href="#about">О себе</a></li>
+            <li><a href="#about">Образование</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#experience">Опыт работы</a></li>
+            <li><a href="#about">Контакты</a></li>
+            <li>
+                <label class="toggle-label" for="darkmode-toggle" aria-label="Переключить тему"></label>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="about-me" id="about">
+            <div class="text">
+                <div class="about-me-text">
+                    <h3>Junior Development</h3>
+                    <h2>Шалякина Ангелина Евгеньевна</h2>
+                    <p>Я начинающий разработчик, которому нравится превращать идею в работающие интерфейсы и продукты.<br>За время учебы и работы я участвовала в разработке веб-приложений, сервисов и чат-ботов.<br>Мне приходилось самостоятельно разрабатывать проекты от идеи и пользовательского сценария до готового продукта. Сейчас хочу развиваться именно в frontend-разработке: углублять имеющиеся знания, получать новые и больше практиковаться.</p>
+                    <p id="contacts">GitHub: <a href="https://github.com/gelya122" target="_blank" rel="noopener">github.com/gelya122</a><br>Почта: <a href="mailto:shalyakinaa@yandex.ru">shalyakinaa@yandex.ru</a></p>
+                </div>
+                <div class="edu" id="education">
+                    <h3>Образование</h3>
+                    <p>Санкт-Петербургская академия инженерных технологий и управления</p>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="/images/IMG_1369.jpg" alt="Фотография Ангелины Шалякиной" />
+            </div>
+        </section>
+
+        <section class="work-experience" id="experience">
+            <h2>Опыт работы</h2>
+            <div class="experience">
+                <div class="one">
+                    <div class="time">
+                        <p>2026-04-01 — 2026-08-05</p>
+                        <p>4 месяца</p>
+                    </div>
+                    <div class="description">
+                        <p><b>AI-assisted Developer (Vibe Coder)</b><br>Арбитег, Санкт-Петербург<br>Разработка веб-приложений, чат-ботов.<br>Активное использование AI-инструментов в процессе разработки (OpenAI Codex, Cursor AI, ChatGPT).</p>
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="time">
+                        <p>2025-10-20 — 2026-01-10</p>
+                        <p>3 месяца</p>
+                    </div>
+                    <div class="description">
+                        <p><b>Стажер отдела программного обеспечения</b><br>ЗАО СПИИРАН-НТБВТ, Санкт-Петербург<br>Участие в командной разработке веб-клиента, работа с HTML, CSS, JavaScript, React, TypeScript, Java.<br>Использование AI-инструментов в процессе разработки (Cursor AI).</p>
+                    </div>
+                </div>
+                <div class="three">
+                    <div class="time">
+                        <p>2024-09-01 — 2025-01-01</p>
+                        <p>4 месяца</p>
+                    </div>
+                    <div class="description">
+                        <p><b>Преподаватель</b><br>Детский технопарк, Санкт-Петербург<br>Проведение занятий по созданию сайтов.<br>Обучение основам HTML, CSS.<br>Помощь учащимся при создании веб-страниц.<br>Подготовка и проведение практических занятий.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Проекты</h2>
+            <div class="project">
+                <div class="one-project">
+                    <h3>Бот для выдачи лид-магнитов</h3>
+                    <p>Сервис для выдачи полезных материалов подписчикам канала через интерактивные кнопки в постах.<br>При нажатии кнопки пользователем открывалась mini app, которая проверяла наличие подписки на канал. Если пользователь ещё не был подписан, ему показывалось соответствующее сообщение с предложением подписаться. После успешной проверки пользователь переходил в бота для получения материала.</p>
+                </div>
+                <div class="two-project">
+                    <h3>Платформа для создания и публикации сайтов</h3>
+                    <p>Веб-конструктор, позволяющий создавать многостраничные сайты без непосредственного написания кода.<br>Пользователь мог создавать сайты и страницы, добавлять базовые элементы — текст, изображения, кнопки, фигуры и анимации — и размещать их. Для страниц можно было настраивать шапку и подвал, подключать собственные и Google Fonts, добавлять код в head, подключать Яндекс Метрику и другие настройки.<br>Платформа также поддерживала подключение собственных доменов, выпуск HTTPS-сертификатов и публикацию сайтов. Без собственного домена опубликованные страницы были доступны через адрес конструктора.</p>
+                </div>
+                <div class="three-project">
+                    <h3>Система аналитики источников подписчиков</h3>
+                    <p>Сервис позволял определять, с какой рекламной интеграции пользователь пришёл в канал мессенджера, и отслеживать дальнейшую историю его подписки.<br>Когда пользователь переходил с лендинга в приложение мессенджера, mini app фиксировала источник перехода и связывала его с идентификатором пользователя. После подписки система могла определить, откуда пришёл подписчик, а при последующей отписке — сохранить и эту информацию.</p>
+                </div>
+                <div class="four-project">
+                    <h3>Веб-клиент мониторинга судов</h3>
+                    <p>Веб-интерфейс для отображения информации о судах на интерактивной карте.<br>Данные поступали с сервера в JSON-формате и содержали координаты, тип судна и другие характеристики. Пользователь мог изменять масштаб карты, фильтровать отображаемые суда по типу и выбирать отдельное судно для просмотра его маршрута.<br>Для работы в условиях отсутствия подключения использовалась полноценная offline-карта на основе заранее подготовленных картографических тайлов.<br>Я занималась внешним видом и клиентской частью приложения: отображением объектов на карте, интерфейсом взаимодействия с картой и представлением полученных данных.<br>Моя роль: frontend / веб-клиент.</p>
+                </div>
+                <div class="five-project">
+                    <h3>Онлайн-платформа для автоматизации деятельности онлайн-школы</h3>
+                    <p>Учебный проект, представляющий собой единую систему для управления онлайн-школой.<br>Платформа состояла из нескольких частей:<br>Сайт для студентов: регистрация и авторизация; каталог курсов; просмотр курсов и уроков; отслеживание прогресса; выполнение домашних заданий; просмотр уведомлений; личный кабинет.<br>Настольное приложение для сотрудников: управление студентами; управление курсами и потоками; работа с домашними заданиями; проверка работ; управление преподавателями и менеджерами; составление расписания открытия занятий; просмотр успеваемости и статистики; отправка уведомлений.<br>Все части системы взаимодействовали с единой базой данных через API на ASP.NET Core.<br>Проект был разработан самостоятельно как дипломный прототип.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <div class="section-skills">
+                <h1>Навыки</h1>
+                <div class="filter">
+                    <label class="filter-label" for="category">Категория:</label>
+                    <div class="select-wrap">
+                        <select id="category">
+                            <option value="all">Все</option>
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                            <option value="tools">Tools</option>
+                            <option value="ai-assisted">AI-assisted</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="frontend-skills">
+                    <h2>Frontend</h2>
+                    <ul class="skills-list">
+                        <li class="skill" data-category="frontend"><div class="item-skills"><p>HTML</p></div></li>
+                        <li class="skill" data-category="frontend"><div class="item-skills"><p>CSS</p></div></li>
+                        <li class="skill" data-category="frontend"><div class="item-skills"><p>JavaScript</p></div></li>
+                        <li class="skill" data-category="frontend"><div class="item-skills"><p>React</p></div></li>
+                        <li class="skill" data-category="frontend"><div class="item-skills"><p>Flexbox/CSS Grid</p></div></li>
+                    </ul>
+                </div>
+                <div class="backend-skills">
+                    <h2>Backend</h2>
+                    <ul class="skills-list">
+                        <li class="skill" data-category="backend"><div class="item-skills"><p>C#</p></div></li>
+                        <li class="skill" data-category="backend"><div class="item-skills"><p>ASP .NET Core</p></div></li>
+                        <li class="skill" data-category="backend"><div class="item-skills"><p>WPF</p></div></li>
+                        <li class="skill" data-category="backend"><div class="item-skills"><p>Entity Framework</p></div></li>
+                        <li class="skill" data-category="backend"><div class="item-skills"><p>PostgreSQL</p></div></li>
+                        <li class="skill" data-category="backend"><div class="item-skills"><p>MS SQL</p></div></li>
+                        <li class="skill" data-category="backend"><div class="item-skills"><p>SQL</p></div></li>
+                        <li class="skill" data-category="backend"><div class="item-skills"><p>REST API</p></div></li>
+                    </ul>
+                </div>
+                <div class="tools-skill">
+                    <h2>Tools</h2>
+                    <ul class="skills-list">
+                        <li class="skill" data-category="tools"><div class="item-skills"><p>GitHub</p></div></li>
+                        <li class="skill" data-category="tools"><div class="item-skills"><p>Git</p></div></li>
+                        <li class="skill" data-category="tools"><div class="item-skills"><p>Docker</p></div></li>
+                        <li class="skill" data-category="tools"><div class="item-skills"><p>Linux</p></div></li>
+                        <li class="skill" data-category="tools"><div class="item-skills"><p>Microsoft Office</p></div></li>
+                    </ul>
+                </div>
+                <div class="ai-skills">
+                    <h2>AI-assisted</h2>
+                    <ul class="skills-list">
+                        <li class="skill" data-category="ai-assisted"><div class="item-skills"><p>ChatGPT</p></div></li>
+                        <li class="skill" data-category="ai-assisted"><div class="item-skills"><p>Cursor AI</p></div></li>
+                        <li class="skill" data-category="ai-assisted"><div class="item-skills"><p>OpenAI Codex</p></div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <div class="background"></div>
     <script src="script.js"></script>
 </body>
