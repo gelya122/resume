@@ -11,6 +11,18 @@
 </head>
 <body>
     <input type="checkbox" id="darkmode-toggle" />
+    <script>
+        (function () {
+            var toggle = document.getElementById('darkmode-toggle');
+            if (localStorage.getItem('theme') === 'dark') {
+                toggle.checked = true;
+            }
+            toggle.addEventListener('change', function () {
+                localStorage.setItem('theme', this.checked ? 'dark' : 'light');
+            });
+        })();
+    </script>
+
     <header>
         <ul>
             <li class="heading">Ангелина Шалякина</li>
